@@ -9,20 +9,20 @@ namespace NewExercises.Domain.Tests
     public class RomanNumberTests
     {
 
-        //[Fact]
+        [Fact]
 
-        //public void ConvertIntegerToRoman_Numberrange_ConvertSuccessfully()
-        //{
-        //    // Arrange
-        //    var number = new Faker().Random.Int(1, 3999);
-        //    var romanNumber = new RomanNumber();
+        public void ConvertIntegerToRoman_Numberrange_ConvertSuccessfully()
+        {
+            // Arrange
+            var number = new Faker().Random.Int(1, 3999);
+            var romanNumber = new RomanNumber();
 
-        //    // Act
-        //    romanNumber.ConvertIntegerToRoman(number);
+            // Act
+            romanNumber.ConvertIntegerToRoman(number);
 
-        //    // Assert
-        //    Assert.Equal(number, romanNumber);
-        //}
+            // Assert
+            Assert.Equal(number, romanNumber);
+        }
 
         [Fact]
         public void ConvertIntegerToRoman_NumberRange_MustBeAboveZero()
